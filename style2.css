@@ -1,0 +1,241 @@
+/* CSS--For--Body */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: rgba(108, 224, 62, 0.712); */
+    
+    /* background: url();
+    /* Full height */
+    /* height: 3500px; */
+
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: cursive; */ 
+}
+
+/* CSS--of--Header*/
+header{
+    height: 100%;
+    background-size: 100%; 
+    background-color: rgb(176, 219, 236);
+}
+header h1 ,header div{
+    text-align: center;
+
+}
+header div , header big{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    
+}
+header h1{
+    font-size: 4em;
+    font-family: cursive;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: rgb(209, 49, 49);
+}
+
+/* CSS--for--navbar */
+/* nav{
+    background-color: rgba(29, 15, 68, 0.753);
+    height: 100%;
+    border-radius: 20px;
+    
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+
+    
+}
+nav a{
+    text-decoration: none;
+    font-family: cursive;
+    margin-right: 25px;
+    margin-top: 3px;
+    color: rgb(229, 223, 235);
+    font-weight: bold;
+    font-size: large;
+}
+nav a:hover{
+    color:yellowgreen;
+    cursor: pointer;
+} */
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(16, 25, 39);
+    color: white;
+}
+.webname{
+    padding-left: .3rem;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navlist{
+    /* display: flex; */
+    height: 100%;
+
+}
+.navlist ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.navlist li:hover{
+    background-color: rgba(226, 89, 89, 0.884);
+    border-radius: .4rem;
+    color:rgb(255, 255, 255)
+}
+
+.toggle-btn{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    right: 1rem;
+    top: 1.3rem;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    
+}
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(214, 108, 20);
+    border-radius: 10px;
+    
+}
+/* Extra small devices(phones,600px and down) */
+@media only screen and (max-width:656px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .navlist{
+        width: 100%;
+        display: none;
+        height: 100%;
+    }
+    .navlist ul{
+        width: 100%;
+        flex-direction: column;
+        
+        /* margin: 0.1rem 1.2rem; */
+    }
+    .navlist ul li{
+        text-align: center;
+       
+    }
+    .navlist ul li a{
+        padding: .5rem 1rem;
+    }
+    .toggle-btn{
+        display: flex;
+    }
+    .navlist.active{
+        display: flex;
+        
+    }
+    .navlist li:hover{
+        background-color: rgba(226, 89, 89, 0.884);
+        border-radius: .4rem;
+        color:rgb(255, 255, 255)
+    }
+}
+
+/* CSS--for--main */
+main{
+    border: 2px solid rebeccapurple;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    /* display: flex; */
+    
+}
+main section{
+    /* border: 2px solid red; */
+    background-color:#ffffff;
+    height: 100%;
+    /* width: 100%; */
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+/* CSS--for--section--and--fieldset */
+section fieldset{
+    flex-wrap: wrap;
+    
+    background-color: #ffffff;
+}
+/* fieldset img{
+    position: relative;
+    margin: auto;
+    
+} */
+/* fieldset p{
+    position: relative;
+} */
+.editor{
+    text-align: center;
+}
+#sec-3{
+    
+    display: flex;
+    justify-content:space-around;
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.fdiv{
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 100;
+}
+form input,form textarea,form input[placeholder]{
+    background-color: rgb(224 231 236);
+    color: rgb(10, 9, 9);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    height: 29px;
+    margin-top: 15px;
+    
+}
+.button input{
+    cursor: pointer;
+    color:rgb(6, 31, 18);
+    background-color: rgb(241, 171, 21);
+    margin-top: 7px;
+}
+.button input:hover{
+    background-color: tomato;
+}
+
