@@ -1,8 +1,9 @@
 /* CSS--For--Body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     /* background-color: rgba(108, 224, 62, 0.712); */
     
     /* background: url();
@@ -35,7 +36,7 @@ header div , header big{
 }
 header h1{
     font-size: 4em;
-    font-family: cursive;
+    font-family: 'Open Sans', sans-serif;
     margin-block-start: 0em;
     margin-block-end: 0em;
     color: rgb(209, 49, 49);
@@ -163,13 +164,13 @@ nav a:hover{
     .navlist li:hover{
         background-color: rgba(226, 89, 89, 0.884);
         border-radius: .4rem;
-        color:rgb(255, 255, 255)
+        color:rgb(255, 255, 255);
     }
 }
 
 /* CSS--for--main */
 main{
-    border: 2px solid rebeccapurple;
+    border: 2px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
     height: 100%;
     /* display: flex; */
@@ -189,8 +190,13 @@ main section{
 /* CSS--for--section--and--fieldset */
 section fieldset{
     flex-wrap: wrap;
-    
+    border:1px solid #999;
+	border-radius:8px;
+	box-shadow:0 0 10px #999;
     background-color: #ffffff;
+}
+legend{
+    background-color: white;
 }
 /* fieldset img{
     position: relative;
@@ -215,9 +221,9 @@ form{
     flex-wrap: wrap;
 }
 .fdiv{
-    font-family: cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
-    font-weight: 100;
+    /* font-weight: 100; */
 }
 form input,form textarea,form input[placeholder]{
     background-color: rgb(224 231 236);
